@@ -67,7 +67,7 @@ runcmd:
  # Clone our puppet repo to /etc/puppet
  - PUPPET_DIR="/etc/puppet"
  - rm -rf $PUPPET_DIR/*
- - git clone https://github.com/dspaceproject/puppet-dspace-serverless.git $PUPPET_DIR
+ - git clone https://github.com/dspaceproject/serverless.git $PUPPET_DIR
  - aws s3 cp s3://puppet-serverless/  $PUPPET_DIR --recursive 
  # Install puppet module dependencies (via librarian-puppet)
  - gem install --no-ri --no-rdoc librarian-puppet --version 2.2.3
