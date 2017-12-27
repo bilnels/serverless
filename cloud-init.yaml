@@ -87,6 +87,7 @@ runcmd:
  - puppet apply $PUPPET_DIR/manifests/dspace2.pp -v
  - puppet apply $PUPPET_DIR/manifests/dspace3.pp -v
  - puppet apply $PUPPET_DIR/manifests/dspace4.pp -v
+ - puppet apply $PUPPET_DIR/manifests/java.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat1.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat2.pp -v
