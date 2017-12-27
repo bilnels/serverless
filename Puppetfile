@@ -16,7 +16,7 @@ mod "puppet-unattended_upgrades", "2.0.0"
 mod 'puppetlabs-stdlib', "4.24.0"
 
 #concat
-mod 'puppetlabs-concat', "4.1.1"
+#mod 'puppetlabs-concat', "4.1.1"
 
 # Compressed archive file download and extraction with native types/providers for Windows and Unix
 mod 'puppet-archive', "2.2.0"
@@ -36,8 +36,7 @@ mod "tomcat",
 # Custom Module to install Tomcat
 
 mod "dspace",
-   :git => "https://github.com/dspaceproject/dspace.git"
+   :git => 'https://github.com/dspaceproject/dspace.git'
    
 mod "java",
    :git => "https://github.com/dspaceproject/java.git"
-
