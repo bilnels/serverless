@@ -30,7 +30,7 @@ mod "apache",
    
 # Custom Module to install Tomcat
 
-mod "apache",
+mod "tomcat",
    :git => "https://github.com/dspaceproject/tomcat.git"
    
 # Custom Module to install Tomcat
