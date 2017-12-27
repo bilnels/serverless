@@ -25,18 +25,18 @@ mod 'puppet-archive', "2.2.0"
 mod 'nanliu-staging', "1.0.3"
 
 # Custom Module to install Apache
-mod "apache",
+mod "ddd-apache",
    :git => "https://github.com/dspaceproject/apache.git"
    
 # Custom Module to install Tomcat
 
-mod "tomcat",
+mod "ddd-tomcat",
    :git => "https://github.com/dspaceproject/tomcat.git"
    
 # Custom Module to install Tomcat
 
-mod "dspace",
+mod "ddd-dspace",
    :git => 'https://github.com/dspaceproject/dspace.git'
    
-mod "java",
+mod "ddd-java",
    :git => "https://github.com/dspaceproject/java.git"
