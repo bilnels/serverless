@@ -7,7 +7,7 @@
 
 # Set hostname and Fully Qualified Domain Name
 hostname: "puppet"
-fqdn: "dddke.net"
+fqdn: "dspace.dddke.net"
 
 # Tells cloud-init to manage /etc/hosts (based on /etc/cloud/templates/hosts.tmpl)
 # NOTE: This sets the configured 'hostname' into /etc/hosts
@@ -72,9 +72,10 @@ runcmd:
  # Install puppet module dependencies (via librarian-puppet)
  - gem install --no-ri --no-rdoc librarian-puppet --version 2.2.3
  - cd $PUPPET_DIR && HOME=/root librarian-puppet install
+ 
  #Install or update all modules in a given Puppetfile into ./modules.
- - cd /etc/puppet && sudo apt install r10k
- - cd /etc/puppet && sudo r10k puppetfile install
+ #- cd /etc/puppet && sudo apt install r10k
+ #- cd /etc/puppet && sudo r10k puppetfile install
  # Run puppet
  # NOTE: PUPPET DISABLED. MUST BE RUN MANUALLY AFTER SERVER INITIALIZES.
  # Currently, when kicked off via cloud-init, the PostgreSQL database fails to startup the first time.
