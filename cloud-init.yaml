@@ -81,7 +81,7 @@ runcmd:
  # Currently, when kicked off via cloud-init, the PostgreSQL database fails to startup the first time.
  # Unclear if the problem is in puppet-postgresql, or if it's in cloud-init.
  # However, everything works perfectly when Puppet is run manually after server fully initializes.
- #- puppet apply $PUPPET_DIR/manifests/apache.pp -v
+ - puppet apply $PUPPET_DIR/manifests/apache.pp -v
  #- puppet apply $PUPPET_DIR/manifests/dspacepre-requisites.pp -v
  #- puppet apply $PUPPET_DIR/manifests/dspace.pp -v
  #- puppet apply $PUPPET_DIR/manifests/dspace1.pp -v
