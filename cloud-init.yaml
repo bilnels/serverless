@@ -82,13 +82,13 @@ runcmd:
  # Unclear if the problem is in puppet-postgresql, or if it's in cloud-init.
  # However, everything works perfectly when Puppet is run manually after server fully initializes.
  - puppet apply $PUPPET_DIR/manifests/apache.pp -v
- #- puppet apply $PUPPET_DIR/manifests/dspacepre-requisites.pp -v
- #- puppet apply $PUPPET_DIR/manifests/dspace.pp -v
- #- puppet apply $PUPPET_DIR/manifests/dspace1.pp -v
- #- puppet apply $PUPPET_DIR/manifests/dspace2.pp -v
- #- puppet apply $PUPPET_DIR/manifests/dspace3.pp -v
- #- puppet apply $PUPPET_DIR/manifests/dspace4.pp -v
- - puppet apply $PUPPET_DIR/manifests/java.pp -v
+ - puppet apply $PUPPET_DIR/manifests/dspacepre-requisites.pp -v
+ - puppet apply $PUPPET_DIR/manifests/dspace.pp -v
+ - puppet apply $PUPPET_DIR/manifests/dspace1.pp -v
+ - puppet apply $PUPPET_DIR/manifests/dspace2.pp -v
+ - puppet apply $PUPPET_DIR/manifests/dspace3.pp -v
+ - puppet apply $PUPPET_DIR/manifests/dspace4.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/java.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat1.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat2.pp -v
