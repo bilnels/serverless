@@ -84,16 +84,16 @@ runcmd:
  - puppet apply $PUPPET_DIR/manifests/apache.pp -v
  - puppet apply $PUPPET_DIR/manifests/dspacepre-requisites.pp -v
  - puppet apply $PUPPET_DIR/manifests/dspace.pp -v
- - puppet apply $PUPPET_DIR/manifests/dspace1.pp -v
- - puppet apply $PUPPET_DIR/manifests/dspace2.pp -v
- - puppet apply $PUPPET_DIR/manifests/dspace3.pp -v
- - puppet apply $PUPPET_DIR/manifests/dspace4.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/dspace1.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/dspace2.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/dspace3.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/dspace4.pp -v
  #- puppet apply $PUPPET_DIR/manifests/java.pp -v
  - puppet apply $PUPPET_DIR/manifests/tomcat.pp -v
- - puppet apply $PUPPET_DIR/manifests/tomcat1.pp -v
- - puppet apply $PUPPET_DIR/manifests/tomcat2.pp -v
- - puppet apply $PUPPET_DIR/manifests/tomcat3.pp -v
- - puppet apply $PUPPET_DIR/manifests/tomcat4.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/tomcat1.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/tomcat2.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/tomcat3.pp -v
+ #- puppet apply $PUPPET_DIR/manifests/tomcat4.pp -v
 
 # boot commands
 # These are like 'runcmd', but run very early in the boot process & run on every boot by default.
