@@ -1,9 +1,79 @@
 #cloud-config
-package_upgrade: true
+# Cloud-Init Hints:
+# * Some default settings are in /etc/cloud/cloud.cfg
+# * Some examples at: https://git.launchpad.net/cloud-init/tree/doc/examples
+# * Also see: https://git.launchpad.net/cloud-init/tree/doc/examples/cloud-config.txt
+# * CloudInit Module sourcecode at: https://git.launchpad.net/cloud-init/tree/cloudinit/config
+
+# Set hostname and Fully Qualified Domain Name
+hostname: "efs"
+
+# Tells cloud-init to manage /etc/hosts (based on /etc/cloud/templates/hosts.tmpl)
+# NOTE: This sets the configured 'hostname' into /etc/hosts
+manage_etc_hosts: True
+
+# Add apt repositories
+apt_sources:
+ - source: deb http://archive.canonical.com/ubuntu $RELEASE partner
+ - source: deb-src http://archive.canonical.com/ubuntu $RELEASE partner
+# Run 'apt-get update' on first boot
+apt_update: true
+# Run 'apt-get upgrade' on first boot
+apt_upgrade: true
+# Reboot after package install/upgrade if needed (e.g. if kernel update)
+apt_reboot_if_required: true
+# Install additional packages on first boot
 packages:
-- nfs-utils
+ - nfs-common
+ - jq #json parser
+ - python-pip # Used to install AWS CLI
+
+# run commands
+# These commands are written in order to a shell script (/var/lib/cloud/instance/scripts/runcmd)
+# which is then executed on first boot
 runcmd:
-- mkdir -p /mnt/efs
-- chown ubuntu:ubuntu /mnt/efs
-- echo "file-system-id.efs.aws-region.amazonaws.com:/ /var/www/html/efs-mount-point nfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 0 0" >> /etc/fstab
-- mount -a -t nfs4
+ # Tell sudo to respect SSH Agent forwarding
+ - [sh, -c, "umask 0226; echo 'Defaults env_keep += \"SSH_AUTH_SOCK\"' > /etc/sudoers.d/ssh-auth-sock"]
+ # Ensure pip is latest version
+ - pip install --upgrade pip
+ # Install AWS CLI
+ - pip install awscli
+ #Add support for EFS to the CLI configuration
+ - aws configure set preview.efs true
+ #Get region of EC2 from instance metadata
+ - EC2_AVAIL_ZONE=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
+ - EC2_REGION="`echo \"$EC2_AVAIL_ZONE\" | sed -e 's:\([0-9][0-9]*\)[a-z]*\$:\\1:'`"
+ #Create mount point
+ - mkdir -p /mnt/efs
+ - chown ubuntu:ubuntu /mnt/efs
+ #Get EFS FileSystemID attribute using cli. Make sure you have the correct tagging Name from the EFS. In this case, our cloudformation creates EFS with "ScalingFileSystem". We use the tagging to filter the FileSystem ID
+ #Instance needs to be added to a EC2 role that give the instance at least read access to EFS
+ - EFS_FILE_SYSTEM_ID=`/usr/local/bin/aws efs describe-file-systems --region $EC2_REGION | jq '.FileSystems[]' | jq 'select(.Name=="ScalingFileSystem")' | jq -r '.FileSystemId'`
+ #Instance needs to be a member of security group that allows 2049 inbound/outbound
+ #The security group that the instance belongs to has to be added to EFS file system configuration
+ #Create variables for source and target
+ - DIR_SRC=$EC2_AVAIL_ZONE.$EFS_FILE_SYSTEM_ID.efs.$EC2_REGION.amazonaws.com
+ - DIR_TGT=/mnt/efs
+ #Mount EFS file system
+ - mount -a -t nfs4 $DIR_SRC:/ $DIR_TGT
+ #Backup fstab
+ - cp -p /etc/fstab /etc/fstab.back-$(date +%F)
+ #Append line to fstab
+ - echo -e "$DIR_SRC:/ \t\t $DIR_TGT \t\tnfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 0 0" >> /etc/fstab
+# boot commands
+# These are like 'runcmd', but run very early in the boot process & run on every boot by default.
+bootcmd:
+  # Firewall all EC2 metadata so that only root can access it. Also limits access to IAM roles. (Runs on EVERY boot)
+  - iptables -A OUTPUT -m owner ! --uid-owner root -d 169.254.169.254 -j DROP
+
+# set the locale
+locale: en_US.UTF-8
+
+# timezone: set the timezone for this instance
+timezone: UTC
+
+# Log all cloud-init process output (info & errors) to a logfile
+output: {all: ">> /var/log/cloud-init-output.log"}
+
+# final_message written to log when cloud-init processes are finished
+final_message: "System boot (via cloud-init) is COMPLETE, after $UPTIME seconds. Finished at $TIMESTAMP"
