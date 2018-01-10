@@ -38,6 +38,10 @@ runcmd:
  - pip install --upgrade pip
  # Install AWS CLI
  - pip install awscli
+ 
+ 
+ 
+ 
  #Add support for EFS to the CLI configuration
  - aws configure set preview.efs true
  #Get region of EC2 from instance metadata
@@ -60,6 +64,13 @@ runcmd:
  - cp -p /etc/fstab /etc/fstab.back-$(date +%F)
  #Append line to fstab
  - echo "$DIR_SRC:/ \t\t $DIR_TGT \t\tnfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 0 0" >> /etc/fstab
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 # boot commands
 # These are like 'runcmd', but run very early in the boot process & run on every boot by default.
 bootcmd:
