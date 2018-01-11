@@ -28,6 +28,9 @@ mod 'nanliu-staging', "1.0.3"
 mod "ddd-apache",
    :git => "https://github.com/dspaceproject/apache.git"
    
+# Install the puppet-hiera module
+mod 'puppet-hiera', '3.3.1'
+
 # Custom Module to install Tomcat
 
 mod "ddd-tomcat",
