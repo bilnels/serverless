@@ -26,28 +26,28 @@
     google_analytics_key: "UA-36476390-2"
     
     # Base settings
-    owner              => 'dspace',  # OS user who "owns" DSpace
+    owner:               "dspace",  # OS user who "owns" DSpace
     # Database specific settings
-    db_name            => 'dspacepuppet5',   # Name of database to use
-    db_owner           => 'dspacepuppet',   # DB owner account info
-    db_owner_passwd    => 'dspacepuppet',
+    db_name:             "dspacepuppet5",   # Name of database to use
+    db_owner:            "dspacepuppet",   # DB owner account info
+    db_owner_passwd:      "dspacepuppet",
 
     # Tomcat specific settings
-    tomcat_port        => 8080,
+    tomcat_port"          "8080",
     
     # DSpace installation settings
-    #git_repo           => 'git@github.com:myacccount/DSpace.git',  # Git repo to use for DSpace source
-    #git_branch         => 'dspace-5_x',  #Git branch to use
+    #git_repo:           "git@github.com:myacccount/DSpace.git",  # Git repo to use for DSpace source
+    #git_branch:         "dspace-5_x",  #Git branch to use
     
     # DSpace Admin Account settings
-    admin_firstname    => 'Isaac',
-    admin_lastname     => 'Muteti',
-    admin_email        => 'isaac.muteti@digitaldividedata.com',
-    admin_passwd       => '1234',
-    admin_language     => 'en',
+    admin_firstname:    "Isaac",
+    admin_lastname:     "Muteti",
+    admin_email:        "isaac.muteti@digitaldividedata.com",
+    admin_passwd:       "1234",
+    admin_language:     "en",
     
     #Owner
-    gid    => 'dspace',  # Primary OS group name / ID
-    groups => 'root', # Additional OS groups
+    gid:    "dspace",  # Primary OS group name / ID
+    groups: "root", # Additional OS groups
     sudoer => true,  # Whether to add acct as a sudoer
     
