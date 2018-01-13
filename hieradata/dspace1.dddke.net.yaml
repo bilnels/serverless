@@ -33,7 +33,7 @@
     db_owner_passwd:      "dspacepuppet",
 
     # Tomcat specific settings
-    tomcat_port"          "8080",
+    tomcat_port:          "8080",
     
     # DSpace installation settings
     #git_repo:           "git@github.com:myacccount/DSpace.git",  # Git repo to use for DSpace source
@@ -47,7 +47,7 @@
     admin_language:     "en",
     
     #Owner
-    gid:    "dspace",  # Primary OS group name / ID
-    groups: "root", # Additional OS groups
-    sudoer => true,  # Whether to add acct as a sudoer
+    gid:     "dspace",  # Primary OS group name / ID
+    groups:  "root", # Additional OS groups
+    sudoer:  true,  # Whether to add acct as a sudoer
     
