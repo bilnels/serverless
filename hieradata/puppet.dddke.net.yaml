@@ -5,7 +5,7 @@
 ####
 
  classes:
-  - init
+  - dsapce::init
 
 # DSpace Site to create on this server.
 # Create 'ddspace1.dddke.net'
