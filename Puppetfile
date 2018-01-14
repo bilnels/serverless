@@ -33,13 +33,13 @@ mod 'puppet-hiera', '3.3.1'
 
 # Custom Module to install Tomcat
 
-mod "ddd-tomcat",
-   :git => "https://github.com/dspaceproject/tomcat.git"
+#mod "ddd-tomcat",
+   #:git => "https://github.com/dspaceproject/tomcat.git"
    
 # Custom Module to install Tomcat
 
-mod "ddd-dspace",
-   :git => 'https://github.com/dspaceproject/dspace.git'
+#mod "ddd-dspace",
+   #:git => 'https://github.com/dspaceproject/dspace.git'
    
-mod "ddd-java",
-   :git => "https://github.com/dspaceproject/java.git"
+#mod "ddd-java",
+   #:git => "https://github.com/dspaceproject/java.git"
