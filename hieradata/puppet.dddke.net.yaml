@@ -26,7 +26,7 @@ DSpaceDirect_Sites:
     #google_analytics_key: "UA-36476390-2"
     
     # Base settings
-    owner:               "dspace",  # OS user who "owns" DSpace
+    owner: "dspace",  # OS user who "owns" DSpace
     # Database specific settings
     db_name:             "dspacepuppet5",   # Name of database to use
     db_owner:            "dspacepuppet",   # DB owner account info
