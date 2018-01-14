@@ -4,6 +4,9 @@
 # This data creates the Demo DSpaceDirect site (ddspace1.dddke.net)
 ####
 
+classes:
+  - init
+
 # DSpace Site to create on this server.
 # Create 'ddspace1.dddke.net'
  DSpaceDirect_Sites:
