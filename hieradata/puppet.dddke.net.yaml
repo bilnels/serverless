@@ -7,7 +7,7 @@
 # DSpace Site to create on this server.
 # Create 'ddspace1.dddke.net'
 DSpaceDirect_Sites:
-  ddspace1.dddke.net:
+  puppet.dddke.net:
     site_name:            "DSpace1 Customer1  Repository"
     version:              "5.8"
     git_src_tag:          "dspacedirect-5.8.1"
