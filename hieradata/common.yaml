@@ -1,0 +1,5 @@
+---
+classes:
+ - test
+
+test::variable: 'me im Billy'
