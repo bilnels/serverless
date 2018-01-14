@@ -1,3 +1,4 @@
+hiera_include('classes')
 class { 'dspace':
 ##############################
 # Setup all DSpaceDirect sites 
