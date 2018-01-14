@@ -27,7 +27,7 @@
     owner:"dspace",  
     db_name:"dspacepuppet5",   
     db_owner:"dspacepuppet",   
-    db_owner_passwd: "dspacepuppet",
+    db_owner_passwd:"dspacepuppet",
     tomcat_port:"8080",
     admin_firstname:"Isaac",
     admin_lastname:"Muteti",
