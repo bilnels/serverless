@@ -3,6 +3,7 @@
 # DSpace Site to create on this server.
 # Create 'ddspace1.dddke.net'
  DSpaceDirect_Sites:
+  dspace1.dddke.net:
     #dspace::init::site_name:"DSpace1 Customer1  Repository"
     dspace::version:"5.8"
     dspace::owner:"dspace",  
