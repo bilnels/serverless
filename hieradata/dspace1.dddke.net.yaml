@@ -4,7 +4,8 @@
 # Create 'ddspace1.dddke.net'
  DSpaceDirect_Sites:
   dspace1.dddke.net:
-    #dspace::init::site_name:"DSpace1 Customer1  Repository"
+    dspace::site_name:"DSpace1 Customer1  Repository"
+    dspace::site:"dspace1.dddke.net"
     dspace::version:"5.8"
     dspace::owner:"dspace",  
     dspace::db_name:"dspacepuppet5",   
