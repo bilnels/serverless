@@ -12,3 +12,12 @@
     db_owner:"dspacepuppet",   
     db_owner_passwd:"dspacepuppet",
     tomcat_port:"8080"
+  dspace2.dddke.net:
+    site_name:"DSpace2 Customer2  Repository"
+    site:"dspace2.dddke.net"
+    version:"5.8"
+    owner:"dspace",  
+    db_name:"dspacepuppet2",   
+    db_owner:"dspacepuppet2",   
+    db_owner_passwd:"dspacepuppet2",
+    tomcat_port:"8081"
