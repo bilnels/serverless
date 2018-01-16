@@ -1,0 +1,44 @@
+ classes:
+  - dspace
+# DSpace Site to create on this server.
+# Create 'ddspace1.dddke.net'
+ DSpaceDirect_Sites:
+  dspace1.dddke.net:
+    site_name:"DSpace1 Customer1  Repository"
+    site:"dspace1.dddke.net"
+    version:"5.8"
+    owner:"dspace",  
+    db_name:"dspacepuppet",   
+    db_owner:"dspacepuppet",   
+    db_owner_passwd:"dspacepuppet",
+    tomcat_port:"8080"
+  dspace2.dddke.net:
+    site_name:"DSpace2 Customer1  Repository"
+    version:"5.8"
+    git_src_tag:"dspacedirect-5.8.1"
+    device:"/dev/xvdf"
+    username:"dspace-demo"
+    note:"Demo DSpace Account"
+    db_pwd:"xxxxxxxx"
+    db_port:"5433"
+    tomcat_port:"8080"
+    tomcat_shutdown_port:"8005"
+    tomcat_ajp_port:"8200"
+    handle_server_port:"2461"
+    handle_prefix:"10673" 
+    smtp_user:"xxxxxxxx"
+    smtp_pwd:"xxxxxxxx"
+    google_analytics_key:"UA-36476390-2"
+    owner:"dspace",  
+    db_name:"dspacepuppet5",   
+    db_owner:"dspacepuppet",   
+    db_owner_passwd:"dspacepuppet",
+    tomcat_port:"8080",
+    admin_firstname:"Isaac",
+    admin_lastname:"Muteti",
+    admin_email:"isaac.muteti@digitaldividedata.com",
+    admin_passwd:"1234",
+    admin_language:"en",
+    gid:"dspace",  
+    groups:"root", 
+    sudoer:true,
