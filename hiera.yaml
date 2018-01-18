@@ -20,8 +20,8 @@
 # Then load 'common.yaml' for any common/shared settings
 :hierarchy:
   #- "%{::fqdn}"
-  - common
-  - staff
+  #- common
+  #- staff
   - test
 
 # Log all output to console (stdout)
