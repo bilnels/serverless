@@ -22,6 +22,7 @@
   - "%{::fqdn}"
   - common
   - staff
+  - test
 
 # Log all output to console (stdout)
 :logger: console
