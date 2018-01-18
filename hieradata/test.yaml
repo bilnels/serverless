@@ -2,4 +2,4 @@
 classes:
  - test
 
-test::variable: 'me im Billy'
+test::variable: 'Trying out Hiera'
