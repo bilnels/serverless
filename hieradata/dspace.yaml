@@ -1,0 +1,17 @@
+DSpaceDirect_Sites:
+
+ # Create 'demo.dspacedirect.org'
+ dspace:
+   db_name:              "dspacepuppet"
+   db_user:              "dspacepuppet"
+   db_passwd:            "dspacepuppet"
+   db_port:              "5433"
+   port:                 "8080"
+#    tomcat_shutdown_port: "8005"
+#   tomcat_ajp_port:      "8009"
+#   install_dir:          "/efs/puppet.dddke.net"
+   admin_firstname:      "Isaac"
+   admin_lastname:       "Muteti"
+   admin_email:          "isaac.muteti@digitaldividedata.com"
+   admin_passwd:         "1234"
+   admin_language:       "en"
