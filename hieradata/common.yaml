@@ -4,4 +4,5 @@ classes:
   #- tomcat
   #- apache
   - gu_misc
+  - profile
   - dspace
