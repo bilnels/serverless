@@ -23,7 +23,8 @@
   #- common
   #- staff
   #- test
-  - mount
+  #- mount
+  - files
 
 # Log all output to console (stdout)
 :logger: console
