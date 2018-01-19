@@ -5,4 +5,4 @@ classes:
   #- apache
   - gu_misc
   - profile
-  - dspace
+  #- dspace
