@@ -3,6 +3,4 @@ classes:
   #- postgresql
   #- tomcat
   #- apache
-  - gu_misc
-  - profile
-  #- dspace
+  - dspace
