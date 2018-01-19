@@ -1,5 +1,5 @@
 files:
   '/tmp/test1':
-    content: 'My Test 1 file'
+    content: 'Billy 1 file'
   '/tmp/test2':
-    content: 'My Test 2 file'
+    content: 'Billy 2 file'
