@@ -1,0 +1,7 @@
+nfs_mounts:
+        mount1:
+            mount_point: "/data"
+            mount_device: "example.com:/vol/onecrddb_data/test"
+        mount2:
+            mount_point: "/data2"
+            mount_device: "example.com:/vol/onecrddb_data/test2"
