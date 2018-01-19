@@ -7,7 +7,7 @@
     #site_name:"DSpace1 Customer1  Repository"
     #site:"dspace1.dddke.net"
     java_version:"5.8"
-    owner:"dspace",  
+    owner:"dspace3",  
     db_name:"dspacepuppet",   
     db_owner:"dspacepuppet",   
     db_owner_passwd:"dspacepuppet",
