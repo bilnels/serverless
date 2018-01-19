@@ -1,0 +1,5 @@
+files:
+  '/tmp/test1':
+    content: 'Test1'
+  '/tmp/test2':
+    content: 'Test2'
