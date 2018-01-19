@@ -19,10 +19,11 @@
 # Look for a YAML config file corresponding to 'fully qualified domain name' fact (i.e. facter | grep fqdn)
 # Then load 'common.yaml' for any common/shared settings
 :hierarchy:
-  - "%{::fqdn}"
-  - common
+  #- "%{::fqdn}"
+  #- common
   #- staff
   #- test
+  - mount
 
 # Log all output to console (stdout)
 :logger: console
