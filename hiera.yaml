@@ -20,7 +20,7 @@
 # Then load 'common.yaml' for any common/shared settings
 :hierarchy:
   #- "%{::fqdn}"
-  #- common
+  - common
   #- staff
   #- test
   - mount
