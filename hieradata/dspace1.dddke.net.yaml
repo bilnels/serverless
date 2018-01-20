@@ -2,10 +2,10 @@
 # Create 'ddspace1.dddke.net'
 --- 
 DSpaceDirect_Sites: 
-  dspace1.dddke.net: 
-  java_version:"5.8" 
-  owner:"dspace1", 
-  db_name:"dspacepuppet", 
-  db_owner:"dspacepuppet", 
-  db_owner_passwd:"dspacepuppet", 
-  tomcat_port:"8080"
+  'dspace1.dddke.net': 
+   java_version:"5.8" 
+   owner:"dspace1", 
+   db_name:"dspacepuppet", 
+   db_owner:"dspacepuppet", 
+   db_owner_passwd:"dspacepuppet", 
+   tomcat_port:"8080"
