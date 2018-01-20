@@ -1,6 +1,6 @@
 # DSpace Site to create on this server.
 # Create 'ddspace1.dddke.net'
- DSpaceDirect_Sites:
+DSpaceDirect_Sites:
   dspace1.dddke.net:
     #site_name:"DSpace1 Customer1  Repository"
     #site:"dspace1.dddke.net"
