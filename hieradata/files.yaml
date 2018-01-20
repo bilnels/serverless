@@ -1,5 +1,5 @@
 files:
-  /tmp/test1:
-    content:"Its finally over Hiera 3"
-  /tmp/test2:
-    content:"The most interesting part of learning Hiera 4"
+  '/tmp/test1':
+    content: 'Its finally over Hiera 3'
+  '/tmp/test2':
+    content: 'The most interesting part of learning Hiera 4'
