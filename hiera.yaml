@@ -24,7 +24,7 @@
   #- staff
   #- test
   #- mount
-  #- files
+  - files
 
 # Log all output to console (stdout)
 :logger: console
