@@ -3,8 +3,9 @@
 --- 
 DSpaceDirect_Sites: 
   'dspace1.dddke.net': 
-   java_version: '5.8' 
+   java_version: '8' 
    owner: 'dspace1' 
+   git_branch: '5.8'
    db_name: 'dspacepuppet' 
    db_owner: 'dspacepuppet' 
    db_owner_passwd: 'dspacepuppet' 
