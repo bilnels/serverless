@@ -33,7 +33,7 @@ mod 'puppet-hiera', '3.3.1'
 
 # Install Puppet Labs Tomcat module
 # https://github.com/puppetlabs/puppetlabs-tomcat/
-mod 'puppetlabs-tomcat', '2.1.0'
+mod 'puppetlabs-tomcat', '1.5.0'
 
 
 
