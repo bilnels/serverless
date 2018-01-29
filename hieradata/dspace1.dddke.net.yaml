@@ -4,7 +4,8 @@
 DSpaceDirect_Sites: 
   'dspace1.dddke.net': 
    java_version: '8' 
-   owner: 'dspace1' 
+   owner: 'dspace1'
+   catalina_home: '/opt/tomcat'
    catalina_base: '/opt/tomcat'
    version: '5.8'
    git_branch: 'dspace-5.8'
