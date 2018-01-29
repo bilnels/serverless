@@ -22,7 +22,7 @@ mod 'puppetlabs-concat', "4.1.1"
 mod 'puppet-archive', "2.2.0"
 
 #staging
-mod 'nanliu-staging', "1.0.3"
+#mod 'nanliu-staging', "1.0.3"
 
 # Custom Module to install Apache
 mod "ddd-apache",
