@@ -12,4 +12,4 @@ DSpaceDirect_Sites:
    db_owner: 'dspacepuppet' 
    db_owner_passwd: 'dspacepuppet' 
    tomcat_port: '8080'
-   source_url: ',
+   source_url: 'http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz',
