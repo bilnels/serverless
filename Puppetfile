@@ -31,7 +31,11 @@ mod "ddd-apache",
 # Install the puppet-hiera module
 mod 'puppet-hiera', '3.3.1'
 
-# Custom Module to install Tomcat
+# Install Puppet Labs Tomcat module
+# https://github.com/puppetlabs/puppetlabs-tomcat/
+mod 'puppetlabs-tomcat', '2.1.0'
+
+
 
 #mod "ddd-tomcat",
    #:git => "https://github.com/dspaceproject/tomcat.git"
