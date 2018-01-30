@@ -5,7 +5,7 @@ DSpaceDirect_Sites:
   'dspace1.dddke.net': 
    java_version: '8' 
    owner: 'dspace2'
-   username: '%{lookup('owner')}' #interpolation of owner value for tomcat use
+   username: "%{lookup('owner')}" #interpolation of owner value for tomcat use
    catalina_home: '/opt/tomcat2'
    catalina_base: '/opt/tomcat2'
    version: '5.8'
