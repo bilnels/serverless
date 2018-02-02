@@ -16,6 +16,6 @@ DSpaceDirect_Sites:
    db_name: 'dspace_pilot4' 
    db_user: 'dspacepuppet' 
    db_passwd: 'dspacepuppet'
-   db_port:'5432'
+   db_port: '5432'
    source_url: 'http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz'
    
