@@ -13,9 +13,9 @@ DSpaceDirect_Sites:
    tomcat_ajp_port: '8209'
    version: '5.8'
    git_branch: 'dspace-5.8'
-   db_name: 'dspacepuppet' 
-   db_owner: 'dspacepuppet' 
-   db_owner_passwd: 'dspacepuppet' 
-   tomcat_port: '8080'
+   db_name: 'dspace_pilot4' 
+   db_user: 'dspacepuppet' 
+   db_passwd: 'dspacepuppet'
+   db_port:'5432'
    source_url: 'http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz'
    
