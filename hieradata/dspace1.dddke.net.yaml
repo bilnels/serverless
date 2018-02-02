@@ -9,7 +9,7 @@ DSpaceDirect_Sites:
    catalina_home: '/opt/tomcat2'
    catalina_base: '/opt/tomcat2'
    tomcat_shutdown_port: '8006'
-   tomcat_port: '8180'
+   tomcat_port: '8081'
    tomcat_ajp_port: '8209'
    version: '5.8'
    git_branch: 'dspace-5.8'
