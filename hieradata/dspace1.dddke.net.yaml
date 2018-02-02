@@ -4,10 +4,10 @@
 DSpaceDirect_Sites: 
   'dspace1.dddke.net': 
    java_version: '8' 
-   owner: 'dspace5'
-   username: 'dspace5' #interpolation of owner value for tomcat use
-   catalina_home: '/opt/tomcat5'
-   catalina_base: '/opt/tomcat5'
+   owner: 'dspace6'
+   username: 'dspace6' #interpolation of owner value for tomcat use
+   catalina_home: '/opt/tomcat6'
+   catalina_base: '/opt/tomcat6'
    tomcat_shutdown_port: '8006'
    tomcat_port: '8081'
    tomcat_ajp_port: '8209'
