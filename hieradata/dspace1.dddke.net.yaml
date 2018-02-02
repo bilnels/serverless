@@ -18,4 +18,10 @@ DSpaceDirect_Sites:
    db_passwd: 'dspacepuppet'
    db_port: '5432'
    source_url: 'http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz'
+   # DSpace Admin Account settings
+  admin_firstname    => 'Isaac',
+  admin_lastname     => 'Muteti',
+  admin_email        => 'isaac.muteti@digitaldividedata.com',
+  admin_passwd       => '1234',
+  admin_language     => 'en',
    
