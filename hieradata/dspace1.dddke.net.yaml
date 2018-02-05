@@ -4,13 +4,13 @@
 DSpaceDirect_Sites: 
   'dspace1.dddke.net': 
    java_version: '8' 
-   owner: 'dspace8'
-   username: 'dspace8' #interpolation of owner value for tomcat use
-   catalina_home: '/opt/tomcat8'
-   catalina_base: '/opt/tomcat8'
-   tomcat_shutdown_port: '8006'
-   tomcat_port: '8081'
-   tomcat_ajp_port: '8209'
+   owner: 'dspace9'
+   username: 'dspace9' #interpolation of owner value for tomcat use
+   catalina_home: '/opt/tomcat9'
+   catalina_base: '/opt/tomcat9'
+   tomcat_shutdown_port: '8009'
+   tomcat_port: '8089'
+   tomcat_ajp_port: '8909'
    version: '5.8'
    git_branch: 'dspace-5.8'
    db_name: 'dspace_pilot4' 
