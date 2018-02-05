@@ -13,7 +13,7 @@ DSpaceDirect_Sites:
    tomcat_ajp_port: '8909'
    version: '5.8'
    git_branch: 'dspace-5.8'
-   db_name: 'dspace_pilot4' 
+   db_name: 'dspacepilot9' 
    db_user: 'dspacepuppet' 
    db_passwd: 'dspacepuppet'
    db_port: '5432'
