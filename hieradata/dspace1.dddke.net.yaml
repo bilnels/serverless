@@ -11,7 +11,7 @@ DSpaceDirect_Sites:
    catalina_base: '/opt/tomcat9'
    tomcat_shutdown_port: '8009'
    tomcat_port: '8089'
-   tomcat_ajp_port: '8909'
+   tomcat_ajp_port: '8109'
    version: '5.8'
    git_branch: 'dspace-5.8'
    db_name: 'dspacepilot9' 
