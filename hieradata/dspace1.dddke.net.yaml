@@ -1,8 +1,10 @@
 # DSpace Site to create on this server.
 # Create 'ddspace1.dddke.net'
 --- 
-DSpaceDirect_Sites: 
-  'dspace1.dddke.net': 
+DSpaceDirect_Sites:
+
+# Create 'site 1'
+ dspace1.dddke.net: 
    site_name: 'dspace1.dddke.net'
    java_version: '8' 
    owner: 'dspacept'
@@ -25,7 +27,9 @@ DSpaceDirect_Sites:
    admin_email: 'isaac.muteti@digitaldividedata.com'
    admin_passwd: '1234'
    admin_language: 'en'
- 'dspace2.dddke.net': 
+ 
+ # Create 'site 2'
+ dspace2.dddke.net: 
    site_name: 'dspace2.dddke.net'
    java_version: '8' 
    owner: 'dspacept1'
