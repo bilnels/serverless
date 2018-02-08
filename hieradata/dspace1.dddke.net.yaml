@@ -25,7 +25,6 @@ DSpaceDirect_Sites:
    admin_email: 'isaac.muteti@digitaldividedata.com'
    admin_passwd: '1234'
    admin_language: 'en'
-   
  'dspace2.dddke.net': 
    site_name: 'dspace2.dddke.net'
    java_version: '8' 
